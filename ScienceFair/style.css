@@ -70,7 +70,9 @@ header {
     top: 0;
     z-index: 1000; /* Ensures header is on top */
 }
-
+html {
+    scroll-behavior: smooth;
+}
 .main-header-content {
     display: flex;
     justify-content: space-between;
@@ -162,7 +164,7 @@ nav ul li a.active::after {
 /* --- Hero Section --- */
 .hero-section {
     /* Updated placeholder URL for a more vibrant green background */
-    background-image: url('images/background.jpg'); 
+    background-image: url('images/background2.jpg'); 
     background-size: cover;
     background-position: center;
     color: white;
