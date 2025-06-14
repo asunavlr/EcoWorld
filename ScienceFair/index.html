@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco World - Ecology & Sustainability</title>
+    <title>Green Environment - Ecology & Sustainability</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -12,15 +12,15 @@
     <div class="top-bar">
         <div class="container top-bar-content">
             <div class="contact-info">
-                <span><i class="fas fa-phone-alt"></i> Call Us Anytime: (+91) 1800-214-122</span>
-                <span><i class="fas fa-envelope"></i> Email Us Anytime: ecoworld@example.com</span>
+                <span><i class="fas fa-phone-alt"></i> Call Us Anytime: (+55) 62 98181-8250</span>
+                <span><i class="fas fa-envelope"></i> Email Us Anytime: kevinmatos2006@gmail.com</span>
             </div>
             <div class="top-social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-                <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://youtube.com" target="_blank" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                <a href="https://pinterest.com" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </div>
@@ -28,7 +28,7 @@
     <header>
         <div class="container main-header-content">
             <div class="logo">
-                <img src="" alt="Eco World Logo"> Eco World
+                <img src="https://via.placeholder.com/24x24/6BB05E/ffffff?text=🌿" alt="Green Environment Logo"> Green Environment
             </div>
             <nav>
                 <ul>
@@ -41,8 +41,8 @@
                 </ul>
             </nav>
             <div class="header-actions">
-                <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
-                <a href="#" class="free-consultation-btn">Free Consultation</a>
+                <a href="#search-modal" class="search-icon" aria-label="Search"><i class="fas fa-search"></i></a>
+                <a href="#contact" class="free-consultation-btn">Free Consultation</a>
             </div>
         </div>
     </header>
@@ -52,10 +52,10 @@
             <div class="container hero-content">
                 <div class="hero-text">
                     <h2>Go Green Today,<br>Save The World Tomorrow!</h2>
-                    <a href="#" class="read-more-btn">Read More</a>
+                    <a href="#about" class="read-more-btn">Read More</a>
                 </div>
-                <div class="slider-arrow left"><i class="fas fa-chevron-left"></i></div>
-                <div class="slider-arrow right"><i class="fas fa-chevron-right"></i></div>
+                <div class="slider-arrow left" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></div>
+                <div class="slider-arrow right" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></div>
             </div>
         </section>
 
@@ -63,26 +63,45 @@
             <div class="container card-grid">
                 <div class="feature-card">
                     <div class="card-icon">
-                        <i class="fas fa-leaf"></i> </div>
+                        <i class="fas fa-leaf"></i>
+                    </div>
                     <h3>Save Tree to Save Money</h3>
                     <p>Consectetur adipiscing elitdo eiusmod tempor incididunt ut labore.</p>
                 </div>
                 <div class="feature-card highlighted-card">
                     <div class="card-icon">
-                        <i class="fas fa-lightbulb"></i> </div>
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
                     <h3>Think Clean and Go Green</h3>
                     <p>Consectetur adipiscing elitdo eiusmod tempor incididunt ut labore.</p>
                 </div>
                 <div class="feature-card">
                     <div class="card-icon">
-                        <i class="fas fa-recycle"></i> </div>
+                        <i class="fas fa-recycle"></i>
+                    </div>
                     <h3>Save The Planet By Recycling</h3>
                     <p>Consectetur adipiscing elitdo eiusmod tempor incididunt ut labore.</p>
                 </div>
             </div>
         </section>
 
-        <section class="content-image-section">
+        <section id="about" class="content-section placeholder-section">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>This is where information about your organization and its mission would go. You can expand on your values, history, and goals here.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </section>
+
+        <section id="services" class="content-section placeholder-section">
+            <div class="container">
+                <h2>Our Services</h2>
+                <p>Outline the various services you offer, such as waste management consulting, educational programs, sustainability workshops, or eco-friendly product sourcing.</p>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </section>
+        
+        <section id="solutions" class="content-image-section">
             <div class="container content-wrapper">
                 <div class="image-column">
                     <img src="images/snowdrop.jpg" alt="Snowdrop Flowers" class="content-image">
@@ -91,8 +110,31 @@
                     <h2>Reduce, Reuse, Recycle</h2>
                     <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo.</p>
                     <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-                    <a href="#" class="read-more-btn green-btn">Read More</a>
-                </div>
+                    <a href="#services" class="read-more-btn green-btn">Read More</a> </div>
+            </div>
+        </section>
+
+        <section id="blog" class="content-section placeholder-section">
+            <div class="container">
+                <h2>Our Blog</h2>
+                <p>Share your latest articles, news, and insights on environmental issues, sustainable practices, and community initiatives here.</p>
+                <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.</p>
+            </div>
+        </section>
+
+        <section id="shop" class="content-section placeholder-section">
+            <div class="container">
+                <h2>Eco-Friendly Shop</h2>
+                <p>Showcase any sustainable products, books, or merchandise you offer to help people live a greener lifestyle.</p>
+                <a href="https://www.recyclenow.com/"><li>Recycle Now!</li></a>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section placeholder-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Provide ways for visitors to get in touch, such as a contact form (requires JavaScript), email address, phone number, and physical address.</p>
+                <p>Feel free to reach out via email: <a href="kevinmatos2006@gmail.com">kevinmatos2006@gmail.com</a> or call us at (+55) 62 9 8181-8250.</p>
             </div>
         </section>
     </main>
@@ -102,5 +144,13 @@
             <p>&copy; 2025 Green Environment. All rights reserved.</p>
         </div>
     </footer>
+    <div id="search-overlay" class="search-overlay">
+        <a href="#" class="close-search" aria-label="Close Search">&times;</a>
+        <div class="search-overlay-content">
+            <input type="text" id="searchInput" placeholder="Search the website...">
+            <button id="searchButton" type="button"><i class="fas fa-search"></i> Search</button>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+    </div>
 </body>
 </html>
