@@ -1,0 +1,492 @@
+/* --- General Resets & Global Styles --- */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: #666; /* Default body text color */
+    background-color: #f7f7f7; /* Very light gray background */
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #333; /* Default heading color */
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Inherit color unless specified */
+    transition: color 0.3s ease;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* --- Top Bar --- */
+.top-bar {
+    background-color: #f7f7f7; /* Matching header top-line */
+    padding: 10px 0;
+    font-size: 0.85em;
+    color: #666;
+    border-bottom: 1px solid #eee; /* Subtle bottom border */
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allows stacking on smaller screens */
+}
+
+.contact-info span {
+    margin-right: 25px;
+}
+
+.contact-info i {
+    color: #6BB05E; /* Lighter Green icon color */
+    margin-right: 8px;
+}
+
+.top-social-links a {
+    color: #888; /* Slightly darker social icons */
+    margin-left: 15px;
+    font-size: 1.1em;
+}
+
+.top-social-links a:hover {
+    color: #6BB05E; /* Lighter Green on hover */
+}
+
+/* --- Main Header --- */
+header {
+    background-color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05); /* Subtle shadow */
+    position: sticky; /* Keeps header visible on scroll */
+    top: 0;
+    z-index: 1000; /* Ensures header is on top */
+}
+html {
+    scroll-behavior: smooth;
+}
+.main-header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6em; /* Slightly smaller for logo text */
+    font-weight: 700;
+    color: #6BB05E; /* Lighter Green Logo text */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between icon and text */
+}
+
+.logo-icon {
+    border-radius: 50%; /* If logo is circular */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 18px; /* Spacing between nav items */
+}
+
+nav ul li a {
+    color: #333; /* Nav link color */
+    font-weight: 500;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #6BB05E; /* Lighter Green on hover/active */
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #6BB05E; /* Lighter Green underline */
+    bottom: -8px; /* Position underline below text */
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    width: 100%; /* Expand underline on hover/active */
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Space between search and button */
+}
+
+.search-icon {
+    font-size: 1.1em;
+    color: #555; /* Search icon color */
+}
+
+.search-icon:hover {
+    color: #6BB05E; /* Lighter Green on hover */
+}
+
+.free-consultation-btn {
+    background-color: #6BB05E; /* Lighter Green button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px; /* Slightly rounded corners */
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.free-consultation-btn:hover {
+    background-color: #79C96C; /* Slightly lighter green on hover */
+}
+
+/* --- Hero Section --- */
+.hero-section {
+    /* Updated placeholder URL for a more vibrant green background */
+    background-image: url('images/background2.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 0; /* Vertical padding to match height */
+    text-align: left;
+    position: relative; /* For slider arrows and z-index */
+    display: flex; /* Helps align content */
+    align-items: center;
+    min-height: 480px; /* Adjust height as needed */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1; /* Ensures text is above background */
+}
+
+.hero-text h2 {
+    font-size: 3.8em; /* Large heading size */
+    margin-bottom: 30px;
+    color: white; /* White text over background */
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.4); /* For readability on busy background */
+    font-weight: 700;
+}
+
+.read-more-btn {
+    background-color: #79C96C; /* Medium-Lighter Green button */
+    color: white;
+    padding: 14px 35px; /* Larger button padding */
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.read-more-btn:hover {
+    background-color: #6BB05E; /* Lighter Green on hover */
+    transform: translateY(-2px); /* Subtle lift */
+}
+
+.green-btn { /* Specific green button for the bottom section */
+    background-color: #6BB05E; /* Lighter Green */
+}
+
+.green-btn:hover {
+    background-color: #79C96C; /* Slightly lighter green on hover */
+}
+
+/* Slider Arrows (Purely visual, not functional without JS) */
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    color: white;
+    width: 45px; /* Size of the circle */
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 2; /* Above hero content */
+}
+
+.slider-arrow:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* More opaque on hover */
+}
+
+.slider-arrow.left {
+    left: 40px; /* Position from left */
+}
+
+.slider-arrow.right {
+    right: 40px; /* Position from right */
+}
+
+/* --- Feature Cards Section --- */
+.feature-cards-section {
+    padding-bottom: 60px; /* Padding for below cards */
+    background-color: #f7f7f7; /* Matches body background */
+    margin-top: -100px; /* Pulls cards up over hero section */
+    position: relative;
+    z-index: 200; /* Ensures cards are clearly on top */
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between cards */
+}
+
+.feature-card {
+    background-color: white;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1); /* Standard shadow */
+    padding: 40px 30px; /* Ample padding */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-12px); /* Lift higher on hover */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15); /* More prominent shadow on hover */
+}
+
+.feature-card .card-icon {
+    background-color: #DAF0D2; /* Very light green background for icon circle */
+    border-radius: 50%;
+    width: 90px; /* Size of the circle */
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 25px auto; /* Center icon and space below */
+}
+
+.feature-card .card-icon i {
+    color: #6BB05E; /* Lighter Green Icon color */
+    font-size: 2.8em; /* Large icon size */
+}
+
+.feature-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    color: #333;
+    font-weight: 600;
+}
+
+.feature-card p {
+    font-size: 0.95em;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* Highlighted Card (Middle Card) */
+.highlighted-card {
+    background-color: #6BB05E; /* Lighter Green Solid background */
+    color: white; /* White text */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2); /* More prominent initial shadow */
+    transform: translateY(-15px); /* Lifted up by default */
+}
+
+.highlighted-card .card-icon {
+    background-color: white; /* White icon background */
+}
+
+.highlighted-card .card-icon i {
+    color: #6BB05E; /* Lighter Green icon color */
+}
+
+.highlighted-card h3,
+.highlighted-card p {
+    color: white; /* White text for highlighted card */
+}
+
+.highlighted-card:hover {
+    transform: translateY(-20px); /* Lift even higher on hover */
+    box-shadow: 0 12px 35px rgba(0,0,0,0.25);
+}
+
+/* --- Content & Image Section --- */
+.content-image-section {
+    background-color: white;
+    padding: 80px 0;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 60px; /* Space between image and text columns */
+    flex-wrap: wrap; /* Allows columns to stack on smaller screens */
+}
+
+.image-column {
+    flex: 1; /* Allows it to grow/shrink */
+    min-width: 450px; /* Minimum width before forcing a wrap */
+    text-align: center; /* Centers image if it's smaller than column */
+}
+
+.content-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for image */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Shadow for image */
+}
+
+.text-column {
+    flex: 1.2; /* Allows text column to be slightly wider */
+    min-width: 450px; /* Minimum width before forcing a wrap */
+}
+
+.text-column h2 {
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    text-align: left; /* Align to left within its column */
+    color: #6BB05E; /* Lighter Green heading */
+    font-weight: 700;
+}
+
+.text-column p {
+    margin-bottom: 20px;
+    font-size: 1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* --- Footer --- */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 1024px) {
+    .hero-text h2 {
+        font-size: 3.2em;
+    }
+    .slider-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1em;
+    }
+    .image-column, .text-column {
+        min-width: unset; /* Allow flexible width */
+        flex-basis: 100%; /* Make them take full width */
+    }
+    .content-wrapper {
+        flex-direction: column; /* Stack image and text */
+    }
+    .text-column {
+        text-align: center; /* Center text when stacked */
+        margin-top: 40px;
+    }
+    .text-column h2 {
+        text-align: center;
+    }
+    .read-more-btn.green-btn {
+        margin: 0 auto; /* Center button when text is centered */
+    }
+}
+
+@media (max-width: 768px) {
+    .top-bar-content, .main-header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .contact-info {
+        text-align: center;
+    }
+    .contact-info span {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 5px 10px;
+    }
+    .header-actions {
+        margin-top: 10px;
+    }
+    .hero-section {
+        padding: 80px 0;
+        min-height: 400px;
+    }
+    .hero-text h2 {
+        font-size: 2.5em;
+    }
+    .slider-arrow {
+        display: none; /* Hide arrows on small screens */
+    }
+    .feature-cards-section {
+        margin-top: -80px; /* Adjust pull-up */
+        padding-top: 40px;
+    }
+    .card-grid {
+        grid-template-columns: 1fr; /* Stack cards vertically */
+    }
+    .highlighted-card {
+        transform: translateY(0); /* Remove initial lift when stacked */
+    }
+    .highlighted-card:hover {
+        transform: translateY(-8px); /* Keep hover lift */
+    }
+    .content-image-section {
+        padding: 50px 0;
+    }
+    .feature-card {
+        padding: 30px 20px;
+    }
+    .feature-card .card-icon {
+        width: 80px;
+        height: 80px;
+    }
+    .feature-card .card-icon i {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.4em;
+    }
+    .hero-text h2 {
+        font-size: 2em;
+    }
+    .read-more-btn, .free-consultation-btn {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+    .search-icon {
+        margin-right: 15px;
+    }
+    .feature-card {
+        padding: 25px 15px;
+    }
+}
